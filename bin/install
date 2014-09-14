@@ -1,0 +1,20 @@
+unamestr=`uname` 
+echo "Installing codns"
+if [[ "$unamestr" == 'Linux' ]] 
+then
+  echo "Linux detected"
+  wget -nc -q https://github.com/jmcarbo/codns/raw/master/bin/codns_linux_amd64
+  chmod +x codns_linux_amd64
+  mv codns_linux_amd64 codns
+elif [[ \"$unamestr\" == 'Darwin' ]] 
+then 
+  echo "Darwin detected"
+  wget -nc -q https://github.com/jmcarbo/codns/raw/master/bin/codns_darwin_amd64
+  chmod +x codns_darwin_amd64
+  mv codns_darwin_amd64 codns
+fi; 
+
+unzip -o -q 0*
+rm 0*
+
+echo "Install completed"
