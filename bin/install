@@ -14,7 +14,4 @@ then
   mv codns_darwin_amd64 codns
 fi; 
 
-unzip -o -q 0*
-rm 0*
-
 echo "Install completed"

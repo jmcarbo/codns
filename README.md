@@ -17,6 +17,10 @@ Warning: this is alpha software and should be used with caution.
 Running `sudo ./codns` you'll have a proxy dns running on port 127.0.0.1:53 TCP and UDP
 that resolves consul database at 127.0.0.1:8600 and the rest of the dns space.
 
+### Installing binary
+
+curl https://raw.githubusercontent.com/jmcarbo/codns/master/bin/install | bash
+
 ### Getting codns
 
 The latest release is available at [Github][github-src]
