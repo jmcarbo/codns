@@ -14,6 +14,9 @@ Warning: this is alpha software and should be used with caution.
 
 ## Getting Started
 
+Running `sudo ./codns` you'll have a proxy dns running on port 127.0.0.1:53 TCP and UDP
+that resolves consul database at 127.0.0.1:8600 and the rest of the dns space.
+
 ### Getting codns
 
 The latest release is available at [Github][github-src]
@@ -47,7 +50,7 @@ The following configuration example specifies three `filters`:
 - all the other queries will be forwarded to Google DNS (8.8.8.8,
   etc.)
 
-`nasello.json`:
+`codns.json`:
 
 	{
 		"filters": [

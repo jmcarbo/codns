@@ -1,6 +1,10 @@
 {
   "filters": [
     {
+      "pattern": "consul.",
+      "addresses": [  "127.0.0.1:53" ]
+    },
+    {
       "pattern": "example.com.",
       "addresses": [ "208.67.222.222", "208.67.220.220" ]
     },
